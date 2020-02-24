@@ -1,5 +1,46 @@
 <ReportPartitionMetadata>
     <label>Transactions - Fees (Part2)</label>
-    <values/>
+    <values>
+        <values>
+            <field>ColumnNames__c</field>
+            <value>Dealer - Dealer Site code,Dealer - Company name,Contract- or Dealer Site-level Fee?,Dealer Site's
+                Commercial Product code,Is Facility Non-Utilisation Fee attached to Commercial Product?,Apply Facility
+                Non-Utilisation Fee to Dealer Site?,Facility Non-Utilisation Fee basis period,Facility Non-Utilisation
+                Fee - invoicing and payment frequency,Facility Non-Utilisation Fee - invoicing and payment date,Facility
+                Non-Utilisation Fee Invoice - document reference number,Facility Non-Utilisation Fee Invoice - document
+                generation date,Facility Non-Utilisation Fee Invoice - Payer,Facility Non-Utilisation Fee Invoice -
+                Payee,BACS Service User Number ('SUN') (also Originator's Identification Number ('OIN')),BACS Service
+                User Registered Name,BACS Service User Short Name,BACS Direct Debit Dealer Site Core Reference,BACS
+                Direct Debit Payer (human signatory of Direct Debit Instruction),Current month,Invoicable
+                month,Invoicable month-start date,Invoicable month-end date,Calendar days in Invoicable month,Facility
+                Non-Utilisation Fee basic number,Facility Non-Utilisation Fee calculation definition,Average daily
+                Credit limit during Invoicable month (£),Average daily Credit usage during Invoicable month (£),Average
+                daily non-utilised credit facility during Invoicable month (£),Facility Non-Utilisation Fee charge
+                rate,Monthly pro-rata Facility Non-Utilisation Fee charge rate,Permission to propose Vehicles,Credit
+                limit (£),Facility Non-Utilisation Fee net of VAT (£),Vatable?,Facility Non-Utilisation Fee Tax
+                Point,VAT Rate (Month -1),VAT on Facility Non-Utilisation Fee (£),Facility Non-Utilisation Fee
+                (£),Facility Non-Utilisation Fee - Payment Method - Final,Facility Non-Utilisation Fee - Payment Method
+                Date - Final,Facility Non-Utilisation Fee added to BACS Direct Debit File Fields Entity
+            </value>
+        </values>
+        <values>
+            <field>CompoundReport__c</field>
+            <value>TransactionsFees</value>
+        </values>
+        <values>
+            <field>QueryWhereClause__c</field>
+            <value>jbr_whs__TransactionsFNUFeeDealerDealerSiteCode__c IN {2}{3}{4}</value>
+        </values>
+        <values>
+            <field>ReportFields__c</field>
+            <value>
+                jbr_whs__TransactionsFNUFeeDealerDealerSiteCode__c,jbr_whs__DealerCompanyName__c,jbr_whs__ContractOrDealerSiteLevelFee__c,jbr_whs__TransactionsFNUFeeCommercialProductCode__c,jbr_whs__IsFNUFeeAttachedToCommercialProduct__c,jbr_whs__ApplyFNUFeeToDealerSite__c,jbr_whs__FNUFeeBasisPeriod__c,jbr_whs__FNUFeeInvoicingAndPaymentFrequency__c,jbr_whs__FNUFeeInvoicingAndPaymentDate__c,jbr_whs__FNUFeeInvoiceDocumentRefNumber__c,jbr_whs__FNUFeeInvoiceDocumentGenerationDate__c,jbr_whs__FNUFeePayer__c,jbr_whs__FNUFeePayee__c,jbr_whs__BacsSUNAlsoOIN__c,jbr_whs__BacsServiceUserRegisteredName__c,jbr_whs__BacsServiceUserShortName__c,jbr_whs__BacsDirectDebitDealerSiteCoreReference__c,jbr_whs__BacsDirectDebitPayer__c,jbr_whs__CurrentMonth__c,jbr_whs__PreviousMonth__c,jbr_whs__FirstCalendarDayOfPreviousMonth__c,jbr_whs__LastCalendarDayOfPreviousMonth__c,jbr_whs__CalendarDaysInInvoicableMonth__c,jbr_whs__FNUFeeBasicNumber__c,jbr_whs__FNUFeeCalculationDefinition__c,jbr_whs__AverageCreditLimitDuringInvoicableMonth__c,jbr_whs__AverageCreditUsageDuringInvoicableMonth__c,jbr_whs__AvgNonUtCreditFacDuringInvoicableMonth__c,jbr_whs__FNUFeeChargeRate__c,jbr_whs__MonthlyProRataFNUFeeChargeRate__c,jbr_whs__PermissionToProposeVehicles__c,jbr_whs__CreditLimit__c,jbr_whs__FNUFeeNetOfVat__c,jbr_whs__FNUFeeVatable__c,jbr_whs__FNUFeeVatTaxPoint__c,jbr_whs__VatRateMonthMinus1__c,jbr_whs__VatOnFNUFee__c,jbr_whs__FacilityNonUtilisationFee__c,jbr_whs__FNUFeePaymentMethodFinal__c,jbr_whs__FNUFeePaymentMethodDateFinal__c,jbr_whs__FNUFeeAddBacsDDRecord__c
+            </value>
+        </values>
+        <values>
+            <field>sObjectApiName__c</field>
+            <value>jbr_whs__WHSTransactionsFacilityNonUtilisationFee__c</value>
+        </values>
+    </values>
     <protected>false</protected>
 </ReportPartitionMetadata>

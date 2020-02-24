@@ -1,11 +1,8 @@
 import lombok.*;
 import lombok.experimental.Accessors;
 
-@Getter
-@Setter
+@Data
 @Accessors(chain = true)
-@AllArgsConstructor
-@NoArgsConstructor
 public class FieldValuePair{
     public String field;
     public String value;

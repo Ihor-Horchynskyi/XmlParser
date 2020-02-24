@@ -5,10 +5,8 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;
 import lombok.experimental.Accessors;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.sql.SQLOutput;
+import java.util.*;
 
 @Getter
 @Setter
@@ -37,9 +35,18 @@ public class ReportPartitionMetadata {
         if (mtdMap == null) {
             System.out.println("This is " + this);
             mtdMap = new HashMap<>();
+
+            List<String> fieldNameList = new ArrayList<>();
+            List<String> fieldValueList = new ArrayList<>();
             for (FieldValuePair pair : values) {
-                mtdMap.put(pair.field, pair.value);
+                if(pair.field == "ColumnNames__c") fieldNameList = Arrays.asList(pair.value.split(","));
+                if(pair.field == "ReportFields__c") fieldValueList = Arrays.asList(pair.value.split(","));
             }
+
+            for(int i = 0; i<fieldNameList.size(); i++){
+                mtdMap.put(fieldNameList.get(i), fieldValueList.get(i));
+            }
+
         }
         return mtdMap;
     }
