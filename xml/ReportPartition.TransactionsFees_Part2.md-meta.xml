@@ -3,6 +3,7 @@
     <label>Transactions - Fees (Part2)</label>
     <protected>false</protected>
     <values>
+    <values>
         <field>ColumnNames__c</field>
         <value xsi:type="xsd:string">Dealer - Dealer Site code,Dealer - Company name,Contract- or Dealer Site-level Fee?,Dealer Site&#39;s Commercial Product code,Is Facility Non-Utilisation Fee attached to Commercial Product?,Apply Facility Non-Utilisation Fee to Dealer Site?,Facility Non-Utilisation Fee basis period,Facility Non-Utilisation Fee - invoicing and payment frequency,Facility Non-Utilisation Fee - invoicing and payment date,Facility Non-Utilisation Fee Invoice - document reference number,Facility Non-Utilisation Fee Invoice - document generation date,Facility Non-Utilisation Fee Invoice - Payer,Facility Non-Utilisation Fee Invoice - Payee,BACS Service User Number (&#39;SUN&#39;) (also Originator&#39;s Identification Number (&#39;OIN&#39;)),BACS Service User Registered Name,BACS Service User Short Name,BACS Direct Debit Dealer Site Core Reference,BACS Direct Debit Payer (human signatory of Direct Debit Instruction),Current month,Invoicable month,Invoicable month-start date,Invoicable month-end date,Calendar days in Invoicable month,Facility Non-Utilisation Fee basic number,Facility Non-Utilisation Fee calculation definition,Average daily Credit limit during Invoicable month (£),Average daily Credit usage during Invoicable month (£),Average daily non-utilised credit facility during Invoicable month (£),Facility Non-Utilisation Fee charge rate,Monthly pro-rata Facility Non-Utilisation Fee charge rate,Permission to propose Vehicles,Credit limit (£),Facility Non-Utilisation Fee net of VAT (£),Vatable?,Facility Non-Utilisation Fee Tax Point,VAT Rate (Month -1),VAT on Facility Non-Utilisation Fee (£),Facility Non-Utilisation Fee (£),Facility Non-Utilisation Fee - Payment Method - Final,Facility Non-Utilisation Fee - Payment Method Date - Final,Facility Non-Utilisation Fee added to BACS Direct Debit File Fields Entity</value>
     </values>
@@ -21,5 +22,6 @@
     <values>
         <field>sObjectApiName__c</field>
         <value xsi:type="xsd:string">jbr_whs__WHSTransactionsFacilityNonUtilisationFee__c</value>
+    </values>
     </values>
 </CustomMetadata>
