@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dealer Site Invoices &amp; Payments (Part7)</label>
+    <protected>false</protected>
+    <values>
+        <field>ColumnNames__c</field>
+        <value xsi:type="xsd:string">Dealer Site code,Dealer - Company name,Monitoring Fee - invoicing and payment date,Monitoring Fee Invoice - document reference number,Monitoring Fee Invoice - document generation date,Monitoring Fee (£),Monitoring Fee - Payment Method - Final,Monitoring Fee - Payment Method Date - Final,Monitoring Fee added to BACS Direct Debit File Fields Entity</value>
+    </values>
+    <values>
+        <field>CompoundReport__c</field>
+        <value xsi:type="xsd:string">DealerSiteInvoicesAndPayments</value>
+    </values>
+    <values>
+        <field>QueryWhereClause__c</field>
+        <value xsi:type="xsd:string">jbr_whs__TransactionsMFeeDealerDealerSiteCode__c IN {2}{3}{4}</value>
+    </values>
+    <values>
+        <field>ReportFields__c</field>
+        <value xsi:type="xsd:string">jbr_whs__TransactionsMFeeDealerDealerSiteCode__c,jbr_whs__DealerCompanyName__c,jbr_whs__MFeeInvoicingAndPaymentDate__c,jbr_whs__MFeeInvoiceDocumentRefNumber__c,jbr_whs__MFeeInvoiceDocumentGenerationDate__c,jbr_whs__MonitoringFee__c,jbr_whs__MFeePaymentMethodFinal__c,jbr_whs__MFeePaymentMethodDateFinal__c,jbr_whs__MFeeAddBacsDDRecord__c</value>
+    </values>
+    <values>
+        <field>sObjectApiName__c</field>
+        <value xsi:type="xsd:string">jbr_whs__WHSTransactionsMonitoringFee__c</value>
+    </values>
+</CustomMetadata>

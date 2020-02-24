@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Transactions - Fees (Part1)</label>
+    <protected>false</protected>
+    <values>
+        <field>ColumnNames__c</field>
+        <value >Dealer - Dealer Site code,Contract- or Dealer Site-level Fee?,Contract number,Contract status,Dealer - Company name,</value>
+    </values>
+    <values>
+        <field>CompoundReport__c</field>
+        <value >TransactionsFees</value>
+    </values>
+    <values>
+        <field>QueryWhereClause__c</field>
+        <value >jbr_whs__TransactionsALFeeDealerDealerSiteCode__c IN {2}{3}{4}</value>
+    </values>
+    <values>
+        <field>ReportFields__c</field>
+        <value >jbr_whs__TransactionsALFeeDealerDealerSiteCode__c,jbr_whs__ContractOrDealerSiteLevelFee__c,jbr_whs__ContractNumber__c,jbr_whs__ContractStatus__c,jbr_whs__DealerCompanyName__c,jbr_whs__TransactionsALFeeCommercialProductCode__c,jbr_whs__IsALFeeAttachedToCommercialProduct__c,jbr_whs__ApplyALFeeToContract__c,jbr_whs__ALFeeBasisPeriod__c,jbr_whs__ALFeeInvoicingAndPaymentFrequency__c,jbr_whs__ALFeeInvoicingAndPaymentDate__c,jbr_whs__ALFeeInvoiceDocumentRefNumber__c,jbr_whs__ALFeeInvoiceDocumentGenerationDate__c,jbr_whs__ALFeePayer__c,jbr_whs__ALFeePayee__c,jbr_whs__BacsSUNAlsoOIN__c,jbr_whs__BacsServiceUserRegisteredName__c,jbr_whs__BacsServiceUserShortName__c,jbr_whs__BacsDirectDebitDealerSiteCoreReference__c,jbr_whs__BacsDirectDebitPayer__c,jbr_whs__VehicleIdentificationNumberVin__c,jbr_whs__RegistrationPlate__c,jbr_whs__VehicleBrand__c,jbr_whs__VehicleModel__c,jbr_whs__VehicleDerivative__c,jbr_whs__ScheduledAutomaticAppropriationDate__c,jbr_whs__DaysBeforeScheduledAutoAppropDate__c,jbr_whs__ContractDuration__c,jbr_whs__ALFeeBasicNumber__c,jbr_whs__ALFeeCalculationDefinition__c,jbr_whs__ALFeeNetOfVat__c,jbr_whs__ALFeeVatable__c,jbr_whs__ContractCreationDateTime__c,jbr_whs__ALFeeVatTaxPoint__c,jbr_whs__VatRateMonthMinus1__c,jbr_whs__VatOnALFee__c,jbr_whs__AssetLoadingFee__c,jbr_whs__ALFeePaymentMethodFinal__c,jbr_whs__ALFeePaymentMethodDateFinal__c,jbr_whs__ALFeeAddBacsDDRecord__c</value>
+    </values>
+    <values>
+        <field>sObjectApiName__c</field>
+        <value >jbr_whs__WHSTransactionsAssetLoadingFee__c</value>
+    </values>
+</CustomMetadata>

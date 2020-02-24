@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Transactions - Fees (Part3)</label>
+    <protected>false</protected>
+    <values>
+        <field>ColumnNames__c</field>
+        <value xsi:type="xsd:string">Dealer - Dealer Site code,Dealer - Company name,Contract- or Dealer Site-level Fee?,Dealer Site&#39;s Commercial Product code,Is Monitoring Fee attached to Commercial Product?,Apply Monitoring Fee to Dealer Site?,Monitoring Fee basis period,Monitoring Fee - invoicing and payment frequency,Monitoring Fee - invoicing and payment date,Monitoring Fee Invoice - document reference number,Monitoring Fee Invoice - document generation date,Monitoring Fee Invoice - Payer,Monitoring Fee Invoice - Payee,BACS Service User Number (&#39;SUN&#39;) (also Originator&#39;s Identification Number (&#39;OIN&#39;)),BACS Service User Registered Name,BACS Service User Short Name,BACS Direct Debit Dealer Site Core Reference,BACS Direct Debit Payer (human signatory of Direct Debit Instruction),Monitoring Fee basic number,Monitoring Fee calculation definition,Invoicable quarter,Permission to propose Vehicles,Credit limit (£),Monitoring Fee net of VAT (£),Vatable?,Monitoring Fee Tax Point,VAT Rate (Current month),VAT on Monitoring Fee (£),Monitoring Fee (£),Monitoring Fee - Payment Method - Final,Monitoring Fee - Payment Method Date - Final,Monitoring Fee added to BACS Direct Debit File Fields Entity</value>
+    </values>
+    <values>
+        <field>CompoundReport__c</field>
+        <value xsi:type="xsd:string">TransactionsFees</value>
+    </values>
+    <values>
+        <field>QueryWhereClause__c</field>
+        <value xsi:type="xsd:string">jbr_whs__TransactionsMFeeDealerDealerSiteCode__c IN {2}{3}{4}</value>
+    </values>
+    <values>
+        <field>ReportFields__c</field>
+        <value xsi:type="xsd:string">jbr_whs__TransactionsMFeeDealerDealerSiteCode__c,jbr_whs__DealerCompanyName__c,jbr_whs__ContractOrDealerSiteLevelFee__c,jbr_whs__TransactionsMFeeCommercialProductCode__c,jbr_whs__IsMFeeAttachedToCommercialProduct__c,jbr_whs__ApplyMFeeToDealerSite__c,jbr_whs__MFeeBasisPeriod__c,jbr_whs__MFeeInvoicingAndPaymentFrequency__c,jbr_whs__MFeeInvoicingAndPaymentDate__c,jbr_whs__MFeeInvoiceDocumentRefNumber__c,jbr_whs__MFeeInvoiceDocumentGenerationDate__c,jbr_whs__MFeePayer__c,jbr_whs__MFeePayee__c,jbr_whs__BacsSUNAlsoOIN__c,jbr_whs__BacsServiceUserRegisteredName__c,jbr_whs__BacsServiceUserShortName__c,jbr_whs__BacsDirectDebitDealerSiteCoreReference__c,jbr_whs__BacsDirectDebitPayer__c,jbr_whs__MFeeBasicNumber__c,jbr_whs__MFeeCalculationDefinition__c,jbr_whs__CurrentCalendarQuarter__c,jbr_whs__PermissionToProposeVehicles__c,jbr_whs__CreditLimit__c,jbr_whs__MFeeNetOfVat__c,jbr_whs__MFeeVatable__c,jbr_whs__MFeeVatTaxPoint__c,jbr_whs__VatRateCurrentMonth__c,jbr_whs__VatOnMFee__c,jbr_whs__MonitoringFee__c,jbr_whs__MFeePaymentMethodFinal__c,jbr_whs__MFeePaymentMethodDateFinal__c,jbr_whs__MFeeAddBacsDDRecord__c</value>
+    </values>
+    <values>
+        <field>sObjectApiName__c</field>
+        <value xsi:type="xsd:string">jbr_whs__WHSTransactionsMonitoringFee__c</value>
+    </values>
+</CustomMetadata>

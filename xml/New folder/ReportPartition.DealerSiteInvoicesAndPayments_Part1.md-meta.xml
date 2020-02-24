@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dealer Site Invoices &amp; Payments (Part1)</label>
+    <protected>false</protected>
+    <values>
+        <field>ColumnNames__c</field>
+        <value xsi:type="xsd:string">Dealer - Dealer Site code,Contract status,Contract Number,Dealer - Company name,Contract creation date and time,Vehicle Identification Number (&#39;VIN&#39;),Registration plate,Vehicle - Brand,Vehicle - Model,Vehicle - Derivative,Self-Billed VAT Invoice generation,Self-Billed VAT Invoice - generation and payment date,Self-Billed VAT Invoice - document reference number,Self-Billed VAT Invoice - document generation date,Credit Advice generation,Credit Advice - generation and payment date,Credit Advice - document reference number,Credit Advice - document generation date,Sales Invoice generation,Sales Invoice - generation and payment date,Sales Invoice - document reference number,Sales Invoice - document generation date,Funding Value net of VAT (£),VAT Rate (Current month),VAT on Funding Value (£),Funding Value (£),Dealer Deposit (£),Credit Release Method,Credit Release Method selection (Proposal) - User Identity,Credit Release Method selection (Proposal) - date and time,Credit Release Method (Contract),Credit Release Method (Contract) selection - User Identity,Credit Release Method (Contract) selection - date and time,Credit Release Method - Interim,Credit Release Method - Interim - date and time,Credit Release Method - Final,Credit Release Method - Final - date and time,Credit Release Funding Value added to BACS Direct Credit File Fields Entity</value>
+    </values>
+    <values>
+        <field>CompoundReport__c</field>
+        <value xsi:type="xsd:string">DealerSiteInvoicesAndPayments</value>
+    </values>
+    <values>
+        <field>QueryWhereClause__c</field>
+        <value xsi:type="xsd:string">jbr_whs__TransactionsIVSDealerDealerSiteCode__c IN {2}{3}{4}</value>
+    </values>
+    <values>
+        <field>ReportFields__c</field>
+        <value xsi:type="xsd:string">jbr_whs__TransactionsIVSDealerDealerSiteCode__c,jbr_whs__ContractStatus__c,jbr_whs__ContractNumber__c,jbr_whs__DealerCompanyName__c,jbr_whs__ContractCreationDateTime__c,jbr_whs__VehicleIdentificationNumberVin__c,jbr_whs__RegistrationPlate__c,jbr_whs__VehicleBrand__c,jbr_whs__VehicleModel__c,jbr_whs__VehicleDerivative__c,jbr_whs__SelfBilledVatInvoiceGeneration__c,jbr_whs__SBVatInvoiceGenerationAndPaymentDate__c,jbr_whs__SBVatInvoiceDocumentRefNumber__c,jbr_whs__SBVatInvoiceDocumentGenerationDate__c,jbr_whs__CreditAdviceGeneration__c,jbr_whs__CreditAdviceGenerationAndPaymentDate__c,jbr_whs__CreditAdviceDocumentRefNumber__c,jbr_whs__CreditAdviceDocumentGenerationDate__c,jbr_whs__SalesInvoiceGeneration__c,jbr_whs__SalesInvoiceGenerationAndPaymentDate__c,jbr_whs__SalesInvoiceDocumentRefNumber__c,jbr_whs__SalesInvoiceDocumentGenerationDate__c,jbr_whs__FundingValueNetOfVat__c,jbr_whs__VatRateCurrentMonth__c,jbr_whs__VatOnFundingValue__c,jbr_whs__FundingValue__c,jbr_whs__DealerDeposit__c,jbr_whs__CreditReleaseMethod__c,jbr_whs__CreditReleaseMethodSelectionPropUserId__c,jbr_whs__CreditReleaseMethodSelectionPropDateTime__c,jbr_whs__CreditReleaseMethodContract__c,jbr_whs__CreditReleaseMethodConSelectionUserId__c,jbr_whs__CreditReleaseMethodConSelectionDateTime__c,jbr_whs__CreditReleaseMethodInterim__c,jbr_whs__CreditReleaseMethodInterimDateTime__c,jbr_whs__CreditReleaseMethodFinal__c,jbr_whs__CreditReleaseMethodFinalDateTime__c,jbr_whs__CreditReleaseFundingValueAddBacsDCRecord__c</value>
+    </values>
+    <values>
+        <field>sObjectApiName__c</field>
+        <value xsi:type="xsd:string">jbr_whs__WHSTransactionsInitialVehicleSale__c</value>
+    </values>
+</CustomMetadata>
