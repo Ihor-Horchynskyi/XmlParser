@@ -3,7 +3,6 @@
     <label>Transactions - Fees (Part1)</label>
     <protected>false</protected>
     <values>
-    <values>
         <field>ColumnNames__c</field>
         <value xsi:type="xsd:string">Dealer - Dealer Site code,Contract- or Dealer Site-level Fee?,Contract number,Contract status,Dealer - Company name,Contract&#39;s Commercial Product code,Is Asset Loading Fee attached to Commercial Product?,Apply Asset Loading Fee to Contract?,Asset Loading Fee basis period,Asset Loading Fee - invoicing and payment frequency,Asset Loading Fee - invoicing and payment date,Asset Loading Fee Invoice - document reference number,Asset Loading Fee Invoice - document generation date,Asset Loading Fee Invoice - Payer,Asset Loading Fee Invoice - Payee,BACS Service User Number (&#39;SUN&#39;) (also Originator&#39;s Identification Number (&#39;OIN&#39;)),BACS Service User Registered Name,BACS Service User Short Name,BACS Direct Debit Dealer Site Core Reference,BACS Direct Debit Payer (human signatory of Direct Debit Instruction),Vehicle Identification Number (&#39;VIN&#39;),Registration plate,Vehicle - Brand,Vehicle - Model,Vehicle - Derivative,Scheduled Automatic Vehicle Appropriation date,Days remaining before Scheduled Automatic Vehicle Appropriation date,Contract duration,Asset Loading Fee basic number,Asset Loading Fee calculation definition,Asset Loading Fee net of VAT (£),Vatable?,Contract creation date and time,Asset Loading Fee Tax Point,VAT Rate (Month -1),VAT on Asset Loading Fee (£),Asset Loading Fee (£),Asset Loading Fee - Payment Method - Final,Asset Loading Fee - Payment Method Date - Final,Asset Loading Fee added to BACS Direct Debit File Fields Entity</value>
     </values>
@@ -22,6 +21,5 @@
     <values>
         <field>sObjectApiName__c</field>
         <value xsi:type="xsd:string">jbr_whs__WHSTransactionsAssetLoadingFee__c</value>
-    </values>
     </values>
 </CustomMetadata>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dealer Site Invoices &amp; Payments (Part2)</label>
+        <values>
+            <field>ColumnNames__c</field>
+            <value xsi:type="xsd:string">Vehicle - Model,Contract closure date,Scheduled Automatic Vehicle Appropriation overdue?,Vehicle Appropriation Payment - Payment Method - Final,Sales Advice Note - generation and payment date,Appropriation Payment Funding Value added to BACS Direct Debit File Fields Entity ,Vehicle Appropriation Payment - Payment Method Date - Final,Sales Advice Note generation,Sales Advice Note - document generation date,Vehicle Appropriation date,Sales Advice Note - document reference number,Registration plate
+            </value>
+        </values>
+        <values>
+            <field>CompoundReport__c</field>
+            <value xsi:type="xsd:string">DealerSiteInvoicesAndPayments</value>
+        </values>
+        <values>
+            <field>QueryWhereClause__c</field>
+            <value xsi:type="xsd:string">jbr_whs__TransactionsVSBADealerDealerSiteCode__c IN {2}{3}{4}</value>
+        </values>
+        <values>
+            <field>ReportFields__c</field>
+            <value xsi:type="xsd:string">
+                jbr_whs__VehicleModel__c,jbr_whs__ContractClosureDate__c,jbr_whs__ScheduledAutomaticAppropriationOverdue__c,jbr_whs__AppropPaymentPaymentMethodFinal__c,jbr_whs__SalesAdviceNoteGenerationAndPaymentDate__c,jbr_whs__AppropPaymentFundingValueAddBacsDDRecord__c,jbr_whs__AppropPaymentPaymentMethodDateFinal__c,jbr_whs__SalesAdviceNoteGeneration__c,jbr_whs__SalesAdviceNoteDocumentGenerationDate__c,jbr_whs__VehicleAppropriationDate__c,jbr_whs__SalesAdviceNoteDocumentRefNumber__c,jbr_whs__RegistrationPlate__c
+            </value>
+        </values>
+        <values>
+            <field>sObjectApiName__c</field>
+            <value xsi:type="xsd:string">jbr_whs__WHSTransactionsSaleBackAppropriation__c</value>
+        </values>
+    <protected>false</protected>
+</CustomMetadata>

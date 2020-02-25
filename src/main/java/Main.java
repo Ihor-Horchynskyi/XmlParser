@@ -8,51 +8,39 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         System.out.println("INIT");
-        List<String> firstMtdList = Arrays.asList(
-                "xml/ReportPartition.TransactionsFees_Part1.md-meta.xml",
-                "xml/ReportPartition.TransactionsFees_Part2.md-meta.xml",
-                "xml/ReportPartition.TransactionsFees_Part3.md-meta.xml"
+        List<String> firstImportMtdList = Arrays.asList(
+                "xml/Input/ReportPartition.TransactionsFees_Part1.md-meta.xml",
+                "xml/Input/ReportPartition.TransactionsFees_Part2.md-meta.xml",
+                "xml/Input/ReportPartition.TransactionsFees_Part3.md-meta.xml"
         );
 
-        List<ReportPartitionMetadata> metadataObjectsList = new ArrayList<>();
-        for (String filePath : firstMtdList) {
-            ReportPartitionMetadata report = XmlParser.deserialize(filePath);
-            metadataObjectsList.add(report);
-        }
-        for (int i = 1; i < metadataObjectsList.size(); i++) {
-            for (String fieldName : metadataObjectsList.get(0).getMtdMap().keySet()) {
-                System.out.print("Report " + metadataObjectsList.get(i).getLabel() + ": " + "Field \"" + fieldName + "\"");
-                if( metadataObjectsList.get(i).getMtdMap().containsKey(fieldName)) {
-                    System.out.print(" removed!");
-                    metadataObjectsList.get(i).getMtdMap().remove(fieldName);
-                }
-                System.out.println(" ");
-            }
-        }
-
-        List<String> exportMtdList = Arrays.asList(
-                "xml/ReportPartitio1.md-meta.xml",
-                "xml/ReportPartition2.md-meta.xml",
-                "xml/ReportPartition3.md-meta.xml"
+        List<String> firstExportMtdList = Arrays.asList(
+                "xml/Output/ReportPartition.TransactionsFees_Part1.md-meta.xml",
+                "xml/Output/ReportPartition.TransactionsFees_Part2.md-meta.xml",
+                "xml/Output/ReportPartition.TransactionsFees_Part3.md-meta.xml"
         );
 
-        for (int i = 0; i < metadataObjectsList.size(); i++) {
-            ReportPartitionMetadata report = metadataObjectsList.get(i);
-            for (FieldValuePair pair : report.getValues()) {
-                if(pair.field.equals("ColumnNames__c")){
-                    List<String> uniqueNames = new ArrayList<>();
-                    for (String name : report.getMtdMap().keySet()){
-                        if( report.getMtdMap().get(name) != null) uniqueNames.add(name);
-                    }
-                    System.out.println("uniqueNames " + uniqueNames.size());
-                    pair.value = String.join(",", uniqueNames);
-                }
+        List<String> secondImportMtdList = Arrays.asList(
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part1.md-meta.xml",
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part2.md-meta.xml",
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part3.md-meta.xml",
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part4.md-meta.xml",
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part5.md-meta.xml",
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part6.md-meta.xml",
+                "xml/Input/ReportPartition.DealerSiteInvoicesAndPayments_Part7.md-meta.xml"
+        );
 
-                if(pair.field.equals("ReportFields__c")) pair.value = String.join(",", report.getMtdMap().values());
-            }
+        List<String> secondExportMtdList = Arrays.asList(
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part1.md-meta.xml",
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part2.md-meta.xml",
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part3.md-meta.xml",
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part4.md-meta.xml",
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part5.md-meta.xml",
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part6.md-meta.xml",
+                "xml/Output/ReportPartition.DealerSiteInvoicesAndPayments_Part7.md-meta.xml"
+        );
 
-            XmlParser.serialize(metadataObjectsList.get(i), exportMtdList.get(i));
-        }
+        XmlParser.fixMetadata(secondImportMtdList, secondExportMtdList);
 
     }
 }

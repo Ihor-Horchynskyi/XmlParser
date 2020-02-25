@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dealer Site Invoices &amp; Payments (Part3)</label>
+        <values>
+            <field>ColumnNames__c</field>
+            <value xsi:type="xsd:string">Vehicle - Model,Standard Display Charge - Payment Method Date - Final,Standard Display Charge added to BACS Direct Debit File Fields Entity ,Standard Display Charge Invoice - document generation date,Standard Display Charge - invoicing and payment date,Standard Display Charge - Payment Method - Final,Standard Display Charge Invoice - document reference number,Standard Display Charge (£),Registration plate
+            </value>
+        </values>
+        <values>
+            <field>CompoundReport__c</field>
+            <value xsi:type="xsd:string">DealerSiteInvoicesAndPayments</value>
+        </values>
+        <values>
+            <field>QueryWhereClause__c</field>
+            <value xsi:type="xsd:string">jbr_whs__TransactionsSDCDealerDealerSiteCode__c IN {2}{3}{4}</value>
+        </values>
+        <values>
+            <field>ReportFields__c</field>
+            <value xsi:type="xsd:string">jbr_whs__VehicleModel__c,jbr_whs__SDCPaymentMethodDateFinal__c,jbr_whs__SDCAddBacsDDRecord__c,jbr_whs__SDCDocumentGenerationDate__c,jbr_whs__SDCInvoicingAndPaymentDate__c,jbr_whs__SDCPaymentMethodFinal__c,jbr_whs__SDCInvoiceDocumentRefNumber__c,jbr_whs__StandardDisplayCharge__c,jbr_whs__RegistrationPlate__c
+            </value>
+        </values>
+        <values>
+            <field>sObjectApiName__c</field>
+            <value xsi:type="xsd:string">jbr_whs__WHSTransactionsStandardDisplayCharges__c</value>
+        </values>
+    <protected>false</protected>
+</CustomMetadata>

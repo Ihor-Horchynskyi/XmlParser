@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dealer Site Invoices &amp; Payments (Part4)</label>
+        <values>
+            <field>ColumnNames__c</field>
+            <value xsi:type="xsd:string">Vehicle - Model,Penalty Display Charge Invoice - document reference number,Penalty Display Charge (£),Penalty Display Charge - Payment Method Date - Final,Penalty Display Charge added to BACS Direct Debit File Fields Entity ,Penalty Display Charge Invoice - document generation date,Penalty Display Charge - invoicing and payment date,Penalty Display Charge - Payment Method - Final,Registration plate
+            </value>
+        </values>
+        <values>
+            <field>CompoundReport__c</field>
+            <value xsi:type="xsd:string">DealerSiteInvoicesAndPayments</value>
+        </values>
+        <values>
+            <field>QueryWhereClause__c</field>
+            <value xsi:type="xsd:string">jbr_whs__TransactionsPDCDealerDealerSiteCode__c IN {2}{3}{4}</value>
+        </values>
+        <values>
+            <field>ReportFields__c</field>
+            <value xsi:type="xsd:string">
+                jbr_whs__VehicleModel__c,jbr_whs__PDCInvoiceDocumentRefNumber__c,jbr_whs__PenaltyDisplayCharge__c,jbr_whs__PDCPaymentMethodDateFinal__c,jbr_whs__PDCAddBacsDDRecord__c,jbr_whs__PDCDocumentGenerationDate__c,jbr_whs__PDCInvoicingAndPaymentDate__c,jbr_whs__PDCPaymentMethodFinal__c,jbr_whs__RegistrationPlate__c
+            </value>
+        </values>
+        <values>
+            <field>sObjectApiName__c</field>
+            <value xsi:type="xsd:string">jbr_whs__WHSTransactionsPenaltyDisplayCharges__c</value>
+        </values>
+    <protected>false</protected>
+</CustomMetadata>
